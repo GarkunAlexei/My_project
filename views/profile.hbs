@@ -1,0 +1,23 @@
+{{> nav}}
+
+<div class="card" style="width: 100%; text-align: center;">
+  {{!-- <img src="..." class="card-img-top" alt="..."> --}}
+  <div class="card-body">
+    <h5 class="card-title">Привет {{user.name}}</h5>
+    <p class="card-text">Тут хранятся все твои вопросы:</p>
+    {{!-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+  </div>
+</div>
+
+<div class="row">
+  {{#each dataForFront}}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><b>Вопрос:</b><br>{{this.question}}</h5>
+          <p class="card-text"><b>Ответ:</b><br>{{this.answer}}</p>
+          <img src="{{this.img}}" class="card-img-top" alt="...">
+          <p maxlength="10" class="card-text size"><b>Когда ты задал вопрос:</b><br>{{this.createdAt}}</p>
+        </div>
+      </div>
+  {{/each}}
+</div>

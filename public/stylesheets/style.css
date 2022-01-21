@@ -1,0 +1,17 @@
+
+.form {
+   /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin: 0 auto;
+  width: 40%;
+}
+
+.card .new {
+  margin: 0 auto;
+}
+
+.line {
+  display: flex;
+  width: 205px;
+}
