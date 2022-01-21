@@ -7,11 +7,35 @@
   width: 40%;
 }
 
-.card .new {
+.card {
   margin: 0 auto;
 }
 
 .line {
   display: flex;
-  width: 205px;
+  width: 500 px;
 }
+
+#footer {
+  padding: 10px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 0;
+  background-color: #f7f8f9;
+  color: #00750e;
+  border: 1.5px solid #00750e
+}
+
+.navbar {
+  padding: 5px 20px 5px 20px;
+  border: 1.5px solid #00750e
+}
+
+
